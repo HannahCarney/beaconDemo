@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.evothings.beaconfinder"
+	version="0.2.0"
+	xmlns="http://www.w3.org/ns/widgets"
+	xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>TurnUpTuneIn</name>
+    <description>
+        Estimote Beacon party app.
+    </description>
+    <icon src="www/images/logo.png" platform="android" width="72" height="72" density="mdpi" />
+    <author email="marcin.walendzik@gmail.com" href="http://evothings.com">
+        MakersAcademy Beacon Team
+    </author>
+    <access origin="*" />
+    <content src="index.html" />
+    <preference name="DisallowOverscroll" value="true" />
+</widget>
