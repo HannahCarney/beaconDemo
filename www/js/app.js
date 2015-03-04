@@ -51,10 +51,13 @@ var app = (function()
                     info.innerHTML = "Getting party details";
    						      // alert("Hello "+email);
    						      jsonCall(heroku_path,"/mobileApp/getbeacon",{email:email},function(json){
-   											partyBeacon={beacon_major:json.beaconMajor,beacon_minor:json.beaconMinor};
+   											partyBeacon={major:json.beaconMajor,minor:json.beaconMinor};
    										  // alert("Beacon party details: "+partyBeacon.beacon_major+"/"+partyBeacon.beacon_minor);
                         info.innerHTML = "Beacon party details: "+partyBeacon.beacon_major+"/"+partyBeacon.beacon_minor;
                         //added
+                        if ((partyBeacon.major==-1000)||(partyBeacon.minor==-1000)){
+                          innerHTML = 'No party for today.';
+                        }
                         app.startScanningBeacons();
                         app.startRangingBeacons();
    						      });
