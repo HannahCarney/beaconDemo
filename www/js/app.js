@@ -55,8 +55,9 @@ var app = (function()
    										  // alert("Beacon party details: "+partyBeacon.beacon_major+"/"+partyBeacon.beacon_minor);
                         info.innerHTML = "Beacon party details: "+partyBeacon.major+"/"+partyBeacon.minor;
                         //added
+                        console.log(partyBeacon);
                         if ((partyBeacon.major==-1000)||(partyBeacon.minor==-1000)){
-                          innerHTML = 'No party for today.';
+                          info.innerHTML = 'No party for today.';
                         }
                         app.startScanningBeacons();
                         app.startRangingBeacons();
