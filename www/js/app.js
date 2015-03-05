@@ -53,7 +53,7 @@ var app = (function()
    						      jsonCall(heroku_path,"/mobileApp/getbeacon",{email:email},function(json){
    											partyBeacon={major:json.beaconMajor,minor:json.beaconMinor};
    										  // alert("Beacon party details: "+partyBeacon.beacon_major+"/"+partyBeacon.beacon_minor);
-                        info.innerHTML = "Beacon party details: "+partyBeacon.beacon_major+"/"+partyBeacon.beacon_minor;
+                        info.innerHTML = "Beacon party details: "+partyBeacon.major+"/"+partyBeacon.minor;
                         //added
                         if ((partyBeacon.major==-1000)||(partyBeacon.minor==-1000)){
                           innerHTML = 'No party for today.';
