@@ -9,8 +9,8 @@ It is a simple one page application to make it as simple as possible to use;
 It gets beacons data from a given server using mobile's user email address;
 If email matches information in external DB it looks for beacon's details provided;
 To run it for android environment:
-  cordova build
-  cordova run 
+- cordova build
+- cordova run 
   
 second line copies the app to mobile attached to the computer if it is in developement mode;
 
