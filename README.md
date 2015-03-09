@@ -13,3 +13,5 @@ If email matches information in external DB it looks for beacon's details provid
 
 When beacon is found it sends information back to server which will take some additional actions ( sending user's songs to the respective spotify list).
 
+
+It was final a part of a final project of MakersAcademy course taken by group of 5 people and delivered in 12 days.
